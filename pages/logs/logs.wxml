@@ -1,0 +1,28 @@
+<!--logs.wxml-->
+<view class='container'>
+  <view class='worker'>
+    <canvas canvas-id='worker-content' style='height:100%;width:100%;color:#ff0000;' bindtouchmove='moving' bindtouchend='end'></canvas>
+  </view>
+  <view class='construment'>
+    <view>
+      <image class='text' src='/image/text.png' bindtouchend='changeText'></image>
+    </view>
+    <view>
+    <image class='pen' src='/image/pen.png' bindtouchend='changePen'></image>
+    </view>
+    <view>
+      <image class='bucket' src='/image/bucket.png' bindtouchend='changeBucket'></image>
+    </view>
+    <view>
+      <image class='eraser' src='/image/eraser.png' bindtouchend='changeEraser'></image>
+    </view>
+    <view>
+      <image class='seva-present' src='/image/save.png' bindtouchend='changeSave'></image>
+    </view>
+  </view>
+  <view class='save-all'>
+    <button class='delete' type='primary'>清空</button>
+    <button class='submit' type='primary'>保存</button>
+  </view>
+</view>
+

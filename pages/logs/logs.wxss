@@ -1,0 +1,43 @@
+.container{
+  width: 100%;
+  height: 100vh;
+  background-color: LightPink;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+}
+.worker{
+  height: 800rpx;
+  width: 95%;
+  border: 3px inset #000;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.construment{
+  margin-top: 10rpx;
+  margin: 0 auto;
+  height: 200rpx;
+  border: 1px solid #fff;
+  width: 90%;
+  margin-bottom: 15rpx;
+  display: flex;
+  
+}
+.construment image{
+  width: 120rpx;
+  height: 150rpx;
+  border: 1px solid #000;
+  margin-top: 22rpx;
+  margin-right: 11rpx;
+}
+.save-all{
+  width: 90%;
+  height: 50rpx;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 10rpx;
+}
+.save-all button{
+  font-size: 25rpx;
+  line-height: 50rpx;
+}
