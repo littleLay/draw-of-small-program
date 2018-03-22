@@ -6,6 +6,33 @@
   flex-direction:column;
   justify-content: center;
 }
+.container .colorAll{
+  display: flex;
+  height: 70rpx;
+  width: 80%;
+  border: 1px solid #fff;
+  margin: 0 auto;
+  margin-bottom: 10rpx;
+}
+.colorAll view{
+  height: 70rpx;
+  width: 70rpx;
+  border-radius: 100px;
+  margin-right: 20rpx;
+}
+.container input{
+   /* display: none;  */
+  font-size: 28rpx;
+  line-height: 30rpx;
+  height: 30rpx;
+  color: #000;
+  width: 100px;
+  /* border: 1px solid #ccc; */
+}
+.container input:focus{
+  background-color: yellow;
+  color: black;
+}
 .worker{
   height: 800rpx;
   width: 95%;

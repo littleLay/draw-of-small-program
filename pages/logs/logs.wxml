@@ -1,11 +1,22 @@
 <!--logs.wxml-->
 <view class='container'>
+  <view class='colorAll'>
+    <view style='background-color:{{colorAll.green}}' bindtouchstart='greenColor'></view>
+    <view style='background-color:{{colorAll.blue}}' bindtouchstart='blueColor'></view>
+    <view style='background-color:{{colorAll.pink}}' bindtouchstart='pinkColor'></view>
+    <view style='background-color:{{colorAll.black}}' bindtouchstart='blackColor'></view>
+    <view style='background-color:{{colorAll.orange}}' bindtouchstart='orangeColor'></view>
+    <view style='background-color:{{colorAll.red}}' bindtouchstart='redColor'></view>
+    <view style='background-color:{{colorAll.gray}}' bindtouchstart='grayColor'></view>
+  </view>
   <view class='worker'>
-    <canvas canvas-id='worker-content' style='height:100%;width:100%;color:#ff0000;' bindtouchmove='moving' bindtouchend='end'></canvas>
+    <canvas canvas-id='worker-content' style='height:100%;width:100%;color:#ff0000;' bindtouchmove='moving' bindtouchend='end' bindtouchstart='start'>
+      <input type='text' style='display:{{show}};margin-top:{{y}};margin-left:{{x}}' focus='true' bindblur='write' value='{{text}}'></input>
+    </canvas>
   </view>
   <view class='construment'>
     <view>
-      <image class='text' src='/image/text.png' bindtouchend='changeText'></image>
+      <image class='text' src='/image/text.png' bindtouchend='changeText' id='text'></image>
     </view>
     <view>
     <image class='pen' src='/image/pen.png' bindtouchend='changePen'></image>
@@ -21,8 +32,8 @@
     </view>
   </view>
   <view class='save-all'>
-    <button class='delete' type='primary'>清空</button>
-    <button class='submit' type='primary'>保存</button>
+    <button class='delete' type='primary' bindtouchend='clearcanvas'>清空</button>
+    <button class='submit' type='primary' bindtouchend='returnmain'>返回</button>
   </view>
 </view>
 
