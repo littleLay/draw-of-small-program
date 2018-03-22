@@ -10,7 +10,7 @@
   display: flex;
   height: 70rpx;
   width: 80%;
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
   margin: 0 auto;
   margin-bottom: 10rpx;
 }
@@ -44,7 +44,7 @@
   margin-top: 10rpx;
   margin: 0 auto;
   height: 200rpx;
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
   width: 90%;
   margin-bottom: 15rpx;
   display: flex;
@@ -53,7 +53,7 @@
 .construment image{
   width: 120rpx;
   height: 150rpx;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   margin-top: 22rpx;
   margin-right: 11rpx;
 }
